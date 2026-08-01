@@ -1,49 +1,51 @@
 let homeScore = document.getElementById ("home-score")
 let awayScore = document.getElementById("away-score")
-let count = 0
+let aCount = 0
+let hCount = 0
 
 function hPlusOne() {
-    count += 1
-    homeScore.textContent = count
+    hCount += 1
+    homeScore.textContent = hCount
 }
 
 function hPlusTwo() {
-    count += 2
-    homeScore.textContent = count
+    hCount += 2
+    homeScore.textContent = hCount
 }
 
 function hPlusThree() {
-    count += 3
-    homeScore.textContent = count
+    hCount += 3
+    homeScore.textContent = hCount
 }
 
 function hPenalty() {
-    count -= 1
-    homeScore.textContent = count
+    hCount -= 1
+    homeScore.textContent = hCount
 }
 
 function aPlusOne() {
-    count += 1
-    awayScore.textContent = count
+    aCount += 1
+    awayScore.textContent = aCount
 }
 
 function aPlusTwo() {
-    count += 2
-    awayScore.textContent = count
+    aCount += 2
+    awayScore.textContent = aCount
 }
 
 function aPlusThree() {
-    count += 3
-    awayScore.textContent = count
+    aCount += 3
+    awayScore.textContent = aCount
 }
 
 function aPenalty() {
-    count -= 1
-    awayScore.textContent = count
+    aCount -= 1
+    awayScore.textContent = aCount
 }
 
 function newGame() {
-    count = 0
-    homeScore.textContent = count
-    awayScore.textContent = count
+    aCount = 0
+    hCount = 0
+    homeScore.textContent = hCount
+    awayScore.textContent = aCount
 }
